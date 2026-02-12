@@ -1,0 +1,6 @@
+# Enviroments
+venv/
+
+#Data and models
+Data/
+Models/

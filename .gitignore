@@ -1,6 +1,9 @@
 # Enviroments
 venv/
 
+# IDEs
+.idea/
+
 #Data and models
 Data/
 Models/

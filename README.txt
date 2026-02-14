@@ -4,6 +4,13 @@ This legacy passion project uses the Generative Adversarial Networks method to t
 # Demo
 https://github.com/user-attachments/assets/817d532a-2ce8-456f-b523-9f296b43f9b3
 
+```javascript I'm A tab
+console.log('Code Tab A');
+```
+```javascript I'm tab B
+console.log('Code Tab B');
+```
+
 # Data
 The dataset used to train is NVlabs ffhq-dataset scaled down to 64*64 pixels. Find the dataset at: https://github.com/NVlabs/ffhq-dataset
 

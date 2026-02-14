@@ -4,6 +4,6 @@ venv/
 # IDEs
 .idea/
 
-#Data and models
-Data/
-Models/
+# Data and models
+data/faces/crop_200
+models/

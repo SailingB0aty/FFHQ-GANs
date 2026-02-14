@@ -1,4 +1,4 @@
-# GAN Faces
+###GAN Faces
 This legacy passion project uses the Generative Adversarial Networks method to train a model that can generate faces.
 
 # Demo

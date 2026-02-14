@@ -4,7 +4,8 @@ import random
 import numpy as np
 import matplotlib.pyplot as plt
 
-DIR = r"D:\Pictures"
+DIR = r"data/faces"
+NP_FILENAME = "faces_64_RGB"
 
 IMG_SIZE = 64
 COLOUR = True
@@ -13,6 +14,7 @@ X = []
 
 count = 0
 
+# Data is to be contained within folders in the data\ directory
 for folder in os.listdir(DIR):
     folder_dir = os.path.join(DIR, folder)
     try:
@@ -21,15 +23,11 @@ for folder in os.listdir(DIR):
             try:
                 if COLOUR:
                     to_add = cv2.imread(img_dir)
-                    if to_add is not None:
-                        if to_add.shape[0]/to_add.shape[1] <= 16/7 and to_add.shape[0]/to_add.shape[1] >= 16/11:
-                            to_add = cv2.resize(to_add, (128, 72))
-                            plt.imshow(cv2.cvtColor(to_add, cv2.COLOR_BGR2RGB))
-                            plt.show()
-                            X.append(cv2.cvtColor(to_add, cv2.COLOR_BGR2RGB))
-                            count += 1
+                    X.append(cv2.resize(cv2.imread(img_dir, cv2.COLOR_BGR2RGB), (IMG_SIZE, IMG_SIZE)))
+                    count += 1
                 else:
                     X.append(cv2.resize(cv2.imread(img_dir, cv2.IMREAD_GRAYSCALE), (IMG_SIZE, IMG_SIZE)))
+                    count += 1
             except:
                print("ERROR")
         print(f"Loaded {folder} -- Total: {count}")
@@ -38,4 +36,4 @@ for folder in os.listdir(DIR):
 
 print(f"Loaded {count} images")
 
-np.save("data/HomePics.npy", X)
+np.save(f"data/numpy/{NP_FILENAME}", X)

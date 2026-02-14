@@ -10,4 +10,4 @@ python3 venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
-[Demo video](assets/learningTimelapse.mp4)
+https://github.com/user-attachments/assets/817d532a-2ce8-456f-b523-9f296b43f9b3

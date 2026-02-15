@@ -1,10 +1,21 @@
 # GAN Faces #
 This legacy passion project uses the Generative Adversarial Networks method to train a model that can generate faces.
 
+<<<<<<< HEAD
 ## Demo ##
 https://github.com/user-attachments/assets/817d532a-2ce8-456f-b523-9f296b43f9b3
 
 ## Data ##
+=======
+The generator model takes an array of 100 floats (-1 < n < 1) and generates a 64x64 RGB image.
+
+#Demo
+https://github.com/user-attachments/assets/817d532a-2ce8-456f-b523-9f296b43f9b3
+
+A timelapse showing how the generator model learns.
+
+#Data
+>>>>>>> df2a988 (Updated README)
 The dataset used to train is NVlabs ffhq-dataset scaled down to 64*64 pixels. Find the dataset at: https://github.com/NVlabs/ffhq-dataset
 
 ## Linux setup ##
